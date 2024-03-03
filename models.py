@@ -15,3 +15,9 @@ class shift_task(BaseModel):
     shift_starts_at: datetime = Field(alias='ДатаВремяНачалаСмены')
     shift_ends_at: datetime = Field(alias='ДатаВремяОкончанияСмены')
     closed_at: datetime = Field(alias='время закрытия')
+
+
+class product(BaseModel):
+    unique_product_code: str = Field(alias='УникальныйКодПродукта')
+    partion_naumber: int = Field(alias='НомерПартии')
+    partion_date: date = Field(alias='ДатаПартии')
